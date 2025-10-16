@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Bee Garden</title>
+  <!-- Open Graph / Twitter Card metadata for rich previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pixel Bee Garden"> 
+  <meta property="og:description" content="Collect flowers and avoid spiders in this charming pixel adventure!"> 
+  <!-- Use a generic placeholder image for social previews -->
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Pixel+Bee+Garden">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pixel Bee Garden">
+  <meta name="twitter:description" content="Collect flowers and avoid spiders in this charming pixel adventure!">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Pixel+Bee+Garden">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <header id="hud">
+      <span>Score : <span id="score">0</span></span>
+      <span>Meilleur : <span id="best">0</span></span>
+    </header>
+    <!-- Canvas for the game -->
+    <canvas id="game" width="480" height="320" aria-label="Pixel Bee Garden"></canvas>
+
+    <!-- Start Screen Overlay -->
+    <section id="start-screen" class="overlay">
+      <h1>PIXEL BEE GARDEN</h1>
+      <p>Déplace la petite abeille avec les touches fléchées.<br/>Collecte les fleurs et évite les araignées !</p>
+      <button id="play-btn">Jouer</button>
+    </section>
+
+    <!-- Game Over Overlay -->
+    <section id="game-over" class="overlay" hidden>
+      <h2>Terminé !</h2>
+      <p>Score : <span id="final-score">0</span></p>
+      <p>Meilleur : <span id="final-best">0</span></p>
+      <div class="row">
+        <button id="restart-btn">Rejouer</button>
+        <button id="share-btn">Partager</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
